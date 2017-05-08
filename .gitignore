@@ -8,3 +8,4 @@ options.js
 *.log
 .awspublish-*
 /.babelrc
+/.publish

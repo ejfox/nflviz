@@ -62,4 +62,5 @@ body{-webkit-tap-highlight-color:#d7d7d7;font-family:'Whitney SSm A','Whitney SS
 }
 @media screen and (min-width:1180px){.grid.wider,.wider .grid{max-width:1180px;margin:0 auto}
 }
-.playstroke{stroke-width:1}
+#centerlabel{font-size:2em;position:absolute;background-color:#fff;text-align:center;width:100%}
+#tooltip{position:absolute;background-color:rgba(250,250,250,.9);padding:.5em;max-width:300px;pointer-events:none}

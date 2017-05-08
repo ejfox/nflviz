@@ -142,8 +142,10 @@ vizGame = (data) ->
     )
     .style('stroke', (d) ->
       # Color by pass
-      if +d.IsTouchdown is 1
+      if +d.IsTouchdown is 1 and d.OffenseTeam is 'OAK'
         return 'green'
+      else if +d.IsTouchdown is 1 and d.DefenseTeam is 'OAK'
+        return 'red'
       else
         return 'black'
 

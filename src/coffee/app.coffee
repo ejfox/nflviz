@@ -201,14 +201,6 @@ vizGame = (data) ->
     .on 'mousedown', -> onlyShow('IsIncomplete')
 
   controls.append('button')
-    .text('Load Game 10')
-    .on 'mousedown', -> loadGame(10)
-
-  controls.append('button')
-    .text('Load Game 5')
-    .on 'mousedown', -> loadGame(5)
-
-  controls.append('button')
     .text('Next Game')
     .on 'mousedown', -> nextGame()
 

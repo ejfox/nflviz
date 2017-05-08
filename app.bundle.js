@@ -76,7 +76,7 @@
 	      return 1 == +e.IsTouchdown ? "green" : "black";
 	    });
 	  }), svg.selectAll("circle").transition(t).attr("class", "playstroke").style("opacity", function (e) {}).style("stroke", function (e) {
-	    return 1 == +e.IsTouchdown ? "green" : "black";
+	    return 1 == +e.IsTouchdown && "OAK" === e.OffenseTeam ? "green" : 1 == +e.IsTouchdown && "OAK" === e.DefenseTeam ? "red" : "black";
 	  }).style("stroke-width", function (e) {
 	    return "OAK" === e.DefenseTeam ? 2 : 1;
 	  }), controls.html(""), controls.append("button").text("Pass").on("mousedown", function () {
